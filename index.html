@@ -3,9 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Weather App</title>
 </head>
 <body>
-    <h1>GitHub</h1>
+    <div id="container">
+        <div id="search">
+          <input type="text" placeholder="Enter City Name"/>
+          <button ><img src="images/search.png" alt="Search"/></button>
+        </div>
+        <div class="error">
+            <h3>Invalid City Name</h3>
+        </div>
+        <div class="weather">
+            <img src="images/clouds.png" class="weatherImg">
+            <h1 class="temp">25°C</h1>
+            <h2 class="city">Paris</h2>
+       
+            <div class="details">
+                <div class="col">
+                  <img src="images/humidity.png" alt="humidity">
+                <div>
+                    <p class="Humidity">50%</p>
+                    <p>Humidity</p>
+                </div>
+            </div>
+
+             <div class="col">
+                  <img src="images/wind.png" alt="Wind">
+                <div>
+                    <p class="Wind">15km/h</p>
+                    <p>Wind Speed</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="app.js"></script>
 </body>
 </html>
